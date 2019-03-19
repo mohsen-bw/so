@@ -4286,7 +4286,7 @@ def bot(op):
                                start = time.time()
                                cl.sendMessage(msg.to, "progress")
                                elapsed_time = time.time() - start
-                               cl.sendMessage(msg.to,.format(str(elapsed_time)))
+                               cl.sendMessage(msg.to,"{}".format(str(elapsed_time)))
 
                         elif text.lower() == "remove chat":
                           if wait["selfbot"] == True:
@@ -4297,7 +4297,7 @@ def bot(op):
                                    kc.removeAllMessages(op.param2)
                                    kb.removeAllMessages(op.param2)
                                    kd.removeAllMessages(op.param2)
-                                   sw.removeAllMessages(op.param2)
+                                  # sw.removeAllMessages(op.param2)
                                    cl.sendMessage(msg.to,"Chat dibersihkan...")
                                except:
                                    pass

@@ -27,7 +27,7 @@ cl = LineClient()
 cl.log("Auth Token : " + str(cl.authToken))
 channel1 = LineChannel(cl,cl.server.CHANNEL_ID['LINE_TIMELINE'])
 cl.log("Channel Access Token : " + str(channel1.channelAccessToken))
-
+(
 
 ki = LineClient()
 ki.log("Auth Token : " + str(ki.authToken))
@@ -104,6 +104,7 @@ settings = {
     "groupPicture":False,
     "changePicture":False,
     "autoJoinTicket":False,
+    "ARfoto":{},
     "userMention":{},
     "timeRestart": {},
     "server": {},
@@ -1809,11 +1810,11 @@ def bot(op):
                                 zx = ""
                                 zxc = ""
                                 zx2 = []
-                                xpesan =  "「 ɢᴀᴍʙᴀʀ ᴅɪʜᴀᴘᴜs  」\n• ❂➣ ᴘᴇɴɢɪʀɪᴍ : "
-                                ret_ = "• ❂➣ ɴᴀᴍᴀ ɢʀᴜᴘ: {}".format(str(ginfo.name))
-                                ret_ += "\n• ❂➣ ᴡᴀᴋᴛᴜ ɴɢɪʀɪᴍ : {}".format(dt_to_str(cTime_to_datetime(msg_dict[msg_id]["createdTime"])))
-                                ret_ += "\nSADIS_BOTS"
-                                ret_ += "\nCreator:  line.me/ti/p/~gerhanasatan" 
+                                xpesan =  "「 ɢᴀᴍʙᴀʀ ᴅɪʜᴀᴘᴜs  」\n• ✴ ᴘᴇɴɢɪʀɪᴍ : "
+                                ret_ = "• ✴ ɴᴀᴍᴀ ɢʀᴜᴘ: {}".format(str(ginfo.name))
+                                ret_ += "\n• ✴ ᴡᴀᴋᴛᴜ ɴɢɪʀɪᴍ : {}".format(dt_to_str(cTime_to_datetime(msg_dict[msg_id]["createdTime"])))
+                                ret_ += "\nID BOTS"
+                                ret_ += "\nCreator:  line.me/ti/p/~idbots_ku1" 
                                 ry = str(ryan.displayName)
                                 pesan = ''
                                 pesan2 = pesan+"@x \n"
@@ -2002,12 +2003,12 @@ def bot(op):
                             ret_ = "「 DETAIL POS 」"
                             if msg.contentMetadata["serviceType"] == "GB":
                                 contact = cl.getContact(sender)
-                                auth = "\n• ༎  ༓PENULIS : {}".format(str(contact.displayName))
+                                auth = "\n• ༎  ✴PENULIS : {}".format(str(contact.displayName))
                             else:
-                                auth = "\n• ༎  ༓PENULIS : {}".format(str(msg.contentMetadata["serviceName"]))
+                                auth = "\n• ༎  ✴PENULIS : {}".format(str(msg.contentMetadata["serviceName"]))
                             ret_ += auth
                             if "stickerId" in msg.contentMetadata:
-                                stck = "\n• ༎  ༓STICKER : https://line.me/R/shop/detail/{}".format(str(msg.contentMetadata["packageId"]))
+                                stck = "\n• ༎  ✴STICKER : https://line.me/R/shop/detail/{}".format(str(msg.contentMetadata["packageId"]))
                                 ret_ += stck
                             if "mediaOid" in msg.contentMetadata:
                                 object_ = msg.contentMetadata["mediaOid"].replace("svc=myhome|sid=h|","")
@@ -2021,9 +2022,9 @@ def bot(op):
                                     ret_ += murl
                                 else:
                                     if msg.contentMetadata["serviceType"] == "GB":
-                                        ourl = "\n• ༎  ༓Objek URL : https://obs-us.line-apps.com/myhome/h/download.nhn?tid=612w&{}".format(str(msg.contentMetadata["mediaOid"]))
+                                        ourl = "\n• ༎  ✴Objek URL : https://obs-us.line-apps.com/myhome/h/download.nhn?tid=612w&{}".format(str(msg.contentMetadata["mediaOid"]))
                                     else:
-                                        ourl = "\n• ༎  ༓Objek URL : https://obs-us.line-apps.com/myhome/h/download.nhn?tid=612w&{}".format(str(object_))
+                                        ourl = "\n• ༎  ✴Objek URL : https://obs-us.line-apps.com/myhome/h/download.nhn?tid=612w&{}".format(str(object_))
                                 ret_ += ourl
                             if "text" in msg.contentMetadata:
                                 text = "\n• ✴Tulisan : {}".format(str(msg.contentMetadata["text"]))
@@ -2217,34 +2218,34 @@ def bot(op):
                             cl.sendMessage(msg.to,"Foto berhasil dirubah")
                if msg.contentType == 1:
                  if msg._from in admin:
-                        if Amid in Setmain["ARfoto"]:
+                        if Amid in settings["ARfoto"]:
                             path = ki.downloadObjectMsg(msg_id)
-                            del Setmain["ARfoto"][Amid]
+                            del settings["ARfoto"][Amid]
                             ki.updateProfilePicture(path)
                             ki.sendMessage(msg.to,"Foto berhasil dirubah")
-                        elif Bmid in Setmain["ARfoto"]:
+                        elif Bmid in settings["ARfoto"]:
                             path = kk.downloadObjectMsg(msg_id)
-                            del Setmain["ARfoto"][Bmid]
+                            del settings["ARfoto"][Bmid]
                             kk.updateProfilePicture(path)
                             kk.sendMessage(msg.to,"Foto berhasil dirubah")                           
-                        elif Cmid in Setmain["ARfoto"]:
+                        elif Cmid in settings["ARfoto"]:
                             path = kc.downloadObjectMsg(msg_id)
-                            del Setmain["ARfoto"][Cmid]
+                            del settings["ARfoto"][Cmid]
                             kc.updateProfilePicture(path)
                             kc.sendMessage(msg.to,"Foto berhasil dirubah")                          
-                        elif Dmid in Setmain["ARfoto"]:
+                        elif Dmid in settings["ARfoto"]:
                             path = kb.downloadObjectMsg(msg_id)
-                            del Setmain["ARfoto"][Dmid]
+                            del settings["ARfoto"][Dmid]
                             kb.updateProfilePicture(path)
                             kb.sendMessage(msg.to,"Foto berhasil dirubah")                           
                         elif Emid in Setmain["ARfoto"]:
                             path = kd.downloadObjectMsg(msg_id)
-                            del Setmain["ARfoto"][Emid]
+                            del settings["ARfoto"][Emid]
                             kd.updateProfilePicture(path)
                             kd.sendMessage(msg.to,"Foto berhasil dirubah")                            
-                        elif Zmid in Setmain["ARfoto"]:
+                        elif Zmid in settings["ARfoto"]:
                             path = sw.downloadObjectMsg(msg_id)
-                            del Setmain["ARfoto"][Zmid]
+                            del settings["ARfoto"][Zmid]
                             sw.updateProfilePicture(path)
                             sw.sendMessage(msg.to,"Foto berhasil dirubah")
 
@@ -2486,15 +2487,15 @@ def bot(op):
                                     ma = cl.getContact(i)
                                     cl.sendMessage(msg.to, None, contentMetadata={'mid': i}, contentType=13)
 
-                        elif cmd.startswith('penyewa'):
+                        elif cmd.startswith('about'):
                           if wait["selfbot"] == True:
                            if msg._from in admin:
                             try:
                                 arr = []
                                 today = datetime.today()
-                                thn = 2018 
-                                bln = 12     #isi bulannya yg sewa
-                                hr = 17    #isi tanggalnya yg sewa
+                                thn = 2019 
+                                bln = 3     #isi bulannya yg sewa
+                                hr = 19    #isi tanggalnya yg sewa
                                 future = datetime(thn, bln, hr)
                                 days = (str(future - today))
                                 comma = days.find(",")
@@ -2521,8 +2522,8 @@ def bot(op):
                                 ret_ += "\n• ✴VERSION : 「 SELFBOT  」"
                                 ret_ += "\n• ✴EXPIRED : {} - {} - {}".format(str(hr), str(bln), str(thn))
                                 ret_ += "\n• ✴IN DAYS : {} AGAIN".format(days)
-                                ret_ += "\n「 Speed respon 」\n• ༎  ༓{} DETIK".format(str(elapsed_time))
-                                ret_ += "\n「 Selfbot respon 」\n• ༎ ༓{}".format(str(bot))
+                                ret_ += "\n「 Speed respon 」\n• ༎  ✴{} DETIK".format(str(elapsed_time))
+                                ret_ += "\n「 Selfbot respon 」\n• ༎ ✴{}".format(str(bot))
                                 ret_ += "\nTEAM: ID BOTS"
                                 ry = str(ryan.displayName)
                                 pesan = ''
@@ -2541,7 +2542,7 @@ def bot(op):
                         elif cmd == "me" or text.lower() == 'aim':
                           if wait["selfbot"] == True:
                             if msg._from in admin:
-                               sendMention(msg.to, sender, "「 User Selfbot 」\n", "")
+                               sendMention(msg.to, sender, "✴ID USER✴\n", "")
                                msg.contentType = 13
                                msg.contentMetadata = {'mid': mid}
                                cl.sendMessage1(msg)
@@ -2733,7 +2734,7 @@ def bot(op):
                                 zx = ""
                                 zxc = ""
                                 zx2 = []
-                                xpesan =  "「 Runtime 」\n• User Self : "
+                                xpesan =  "✴ Runtime ✴\n• User Self : "
                                 ret_ = "• {}".format(str(bot))
                                 ry = str(ryan.displayName)
                                 pesan = ''
@@ -2762,7 +2763,7 @@ def bot(op):
                                     gTicket = "https://line.me/R/ti/g/{}".format(str(cl.reissueGroupTicket(G.id)))
                                 timeCreated = []
                                 timeCreated.append(time.strftime("%d-%m-%Y [ %H:%M:%S ]", time.localtime(int(G.createdTime) / 1000)))
-                                cl.sendMessage(msg.to, "「 Group Info 」\n「✭」 ❂➣ ɴᴀᴍᴀ ɢʀᴜᴘ : {}".format(G.name)+ "\n「✭」 ID Group : {}".format(G.id)+ "\n「✭」 Pembuat : {}".format(G.creator.displayName)+ "\n「✭」 Waktu Dibuat : {}".format(str(timeCreated))+ "\n「✭」 Jumlah Member : {}".format(str(len(G.members)))+ "\n「✭」 Jumlah Pending : {}".format(gPending)+ "\n「✭」 Group Qr : {}".format(gQr)+ "\n「✭」 Group Ticket : {}".format(gTicket))
+                                cl.sendMessage(msg.to, "「 Group Info 」\n✴ ɴᴀᴍᴀ ɢʀᴜᴘ : {}".format(G.name)+ "\n✴ ID Group : {}".format(G.id)+ "\n✴ Pembuat : {}".format(G.creator.displayName)+ "\n✴ Waktu Dibuat : {}".format(str(timeCreated))+ "\n✴ Jumlah Member : {}".format(str(len(G.members)))+ "\n✴ Jumlah Pending : {}".format(gPending)+ "\n✴ Group Qr : {}".format(gQr)+ "\n✴ Group Ticket : {}".format(gTicket))
                                 cl.sendMessage(msg.to, None, contentMetadata={'mid': G.creator.mid}, contentType=13)
                                 cl.sendImageWithURL(msg.to, 'http://dl.profile.line-cdn.net/'+G.pictureStatus)
                             except Exception as e:
@@ -3064,7 +3065,7 @@ def bot(op):
                                 cl.updateProfile(profile)
                                 cl.sendMessage(msg.to,"Nama diganti jadi " + string + "")
 #KICKALL
-                        elif "!sadis" in msg.text:
+                        elif "kickall" in msg.text:
                           if msg._from in admin:
                            if msg.toType == 2:
                               print("ok")
@@ -3090,7 +3091,7 @@ def bot(op):
                                           break
 
 #===========BOT UPDATE============#
-                        elif msg.text in ["Cipok","Tagall","Desah","Emuach","Assalamualaikum","Pagi","Siang","Sore","Malam","Nah","All"]:
+                        elif msg.text in ["Cipok","Tagall","Desah","Emuach","Assalamualaikum","Pagi","Siang","Sore","Malam","Tag","All"]:
                                if wait["selfbot"] == True:
                                 if msg._from in admin:
                                  group = cl.getGroup(msg.to)
@@ -4415,32 +4416,32 @@ def bot(op):
                         elif cmd == "updatefoto":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
-                                Setmain["ARfoto"][mid] = True
+                                settings["ARfoto"][mid] = True
                                 cl.sendMessage(msg.to,"Send your images.....")
                                 
                         elif cmd == "bot1up":
                             if msg._from in admin:
-                                Setmain["ARfoto"][Amid] = True
+                                settings["ARfoto"][Amid] = True
                                 ki.sendMessage(msg.to,"Send your images.....")
                                 
                         elif cmd == "bot2up":
                             if msg._from in admin:
-                                Setmain["ARfoto"][Bmid] = True
+                                settings["ARfoto"][Bmid] = True
                                 kk.sendMessage(msg.to,"Send your images.....")
                                 
                         elif cmd == "bot3up":
                             if msg._from in admin:
-                                Setmain["ARfoto"][Cmid] = True
+                                settings["ARfoto"][Cmid] = True
                                 kc.sendMessage(msg.to,"Send your images.....")
                                 
                         elif cmd == "bot4up":
                             if msg._from in admin:
-                                Setmain["ARfoto"][Dmid] = True
+                                settings["ARfoto"][Dmid] = True
                                 kb.sendMessage(msg.to,"Send your images.....")
         
                         elif cmd == "bot5up":
                             if msg._from in admin:
-                                Setmain["ARfoto"][Emid] = True
+                                settings["ARfoto"][Emid] = True
                                 ke.sendMessage(msg.to,"Send your images.....")
      
                         elif cmd == "ghostup":
@@ -4518,93 +4519,7 @@ def bot(op):
                                 except:
                                     pass
 
-                          elif "!sadis" in msg.text:
-                           if msg._from in Bots:
-                            if msg.toType == 2:                         
-                               _name = msg.text.replace("!sadis","")
-                               gs = cl.getGroup(msg.to)
-                               gs = ki.getGroup(msg.to)
-                               gs = kk.getGroup(msg.to) 
-                               gs = kc.getGroup(msg.to)
-                               gs = kb.getGroup(msg.to) 
-                               gs = kd.getGroup(msg.to)
-                               cl.sendMessage(to, "█░░╦─╦╔╗╦─╔╗╔╗╔╦╗╔╗░░█\n█░░║║║╠─║─║─║║║║║╠─░░█\n█░░╚╩╝╚╝╚╝╚╝╚╝╩─╩╚╝░░█\nASSALAMUALAIKUM\n")
-                               ki.sendMessage(to, 
-"  ╭━SADIS_BOTS_KILLER\n"
-"  ╰╮┏━┳┳┓┏┳┳┓┏┳┳┳┓\n"
-"  ┏┻╋━┻┻┫┣┻┻┫┣┻┻┻┫\n"
-"  ┃WOY▪┃KAMI DATANG ┃" 
-" ┃┗ⓞⓞ┻┻ⓞ━━ⓞ┻┻ⓞ━╯\n"
-"MAU RATAIN ROOM KALIAN\n"
-"..  (҂`_´)\n"
-   " <,︻╦̵̵̿╤━ ҉     ~  •"
-"█۞███████]▄▄▄▄▄▃●●\n"
-"▂▄▅█████████▅▄▃▂…"
-"[█████████████████]\n"
-"◥⊙▲⊙▲⊙▲⊙▲⊙⊙▲⊙")
-                               kk.sendMessage(to, 
-"━━━━━━━━━━━━━━\n"
-"..  (҂`_´)\n"
-   " <,︻╦̵̵̿╤━ ҉     ~  •"
-"█۞███████]▄▄▄▄▄▃●●\n"
-"▂▄▅█████████▅▄▃▂…"
-"[█████████████████]\n"
-"◥⊙▲⊙▲⊙▲⊙▲⊙⊙▲⊙\n"
-"╭━╮╭━╮\n"
-"┃┃╰╯┃┃\n"
-"┃╭╮╭╮┣┳━╮╭━━┳━━┳┳━╮\n"
-"┃┃┃┃┃┣┫╭╮┫╭╮┃╭╮┣┫╭╯\n"
-"┃┃┃┃┃┃┃┃┃┃╰╯┃╰╯┃┃┃\n"
-"╰╯╰╯╰┻┻╯╰┻━╮┣━╮┣┻╯\n"
-"╱╱╱╱╱╱╱╱╱╭━╯┣━╯┃\n"
-"╱╱╱╱╱╱╱╱╱╰━━┻━━╯\n"
-"━━━━━━━━━━━━━━\n"
-"╭━╮╭━╮\n"
-"┃┃╰╯┃┃\n"
-"┃╭╮╭╮┣┳━╮╭━━┳━━┳┳━╮\n"
-"┃┃┃┃┃┣┫╭╮┫╭╮┃╭╮┣┫╭╯\n"
-"┃┃┃┃┃┃┃┃┃┃╰╯┃╰╯┃┃┃\n"
-"╰╯╰╯╰┻┻╯╰┻━╮┣━╮┣┻╯\n"
-"╱╱╱╱╱╱╱╱╱╭━╯┣━╯┃\n"
-"╱╱╱╱╱╱╱╱╱╰━━┻━━╯\n"
-"━━━━━━━━━━━━━━"
-"SADIS_BOTS_KILLER\n"
-"MW BAKAR ROOM\n" 
-"JANGAN  MLONGO AJA LOO\n"
-"AYO TANGKIS HAHHAHAA\n"
-"━━━━━━━━━━━━━━\n"
-	"╔══╗╔═╗╔══╗╔═╦═╗\n"
-	"╚╗╔╝║╦╝║╔╗║║║║║║\n"
-	"━║║━║╩╗║╠╣║║║║║║\n"
-	"━╚╝━╚═╝╚╝╚╝╚╩═╩╝\n"
-"━━━━━━━━━━━━━━\n"
-	"EEH LU TRIMA AJA YEE\n"
-	"JANGAN NANGIS\n"
-	"JANGAN MEWEK\n"
-	"HAHAHAHAHAHAHAHA\n"
-"━━━━━━━━━━━━━━\n"        
-"SADIS_BOTS_KILLER\n"
-"NAH-NAH-NAH\n" 
-"MALAH MLONGO KI PIYE")
-                               kk.sendMessage(msg.to,
-">>>BYEE-BYEE<..\nLU DENDAM GUE TUNGGU\n<<<<<<<<<>>\nhttp://line.me/ti/p/~gerhanaselatan\nhttp://line.me/ti/p/~cyber01")
-                               cl.sendMessage(msg.to, None, contentMetadata={"STKID":"24893204","STKPKGID":"1790925","STKVER":"1"}, contentType=7)
-                               targets = []
-                               for g in gs.members:
-                                   if _name in g.displayName:
-                                       targets.append(g.mid)
-                               if targets == []:
-                                  ki.sendMessage(msg.to,"Not found")
-                              #    else:
-                               for target in targets:
-                                     if target not in Bots:
-                                      try:
-                                          klist=[cl,ki,kk,kc,kb,kd]
-                                          kicker=random.choice(klist)
-                                          kicker.kickoutFromGroup(msg.to,[target])
-                                          print (msg.to,[g.mid])
-                                      except:
-                                          cl.sendMessage(msg.to,"Bye all")
+                          
                         elif ("Kick " in msg.text):
                           if wait["selfbot"] == True:
                             if msg._from in admin:
@@ -4620,7 +4535,7 @@ def bot(op):
                                        except:
                                            pass                              
 
-                        elif cmd == "jepit":
+                        elif cmd == "invite":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                 try:
@@ -4850,31 +4765,6 @@ def bot(op):
                                            pass
 
 #===========KICKOUT============#
-                        elif ("Sd " in msg.text):
-                          if wait["selfbot"] == True:
-                            if msg._from in admin:
-                               key = eval(msg.contentMetadata["MENTION"])
-                               key["MENTIONEES"][0]["M"]
-                               targets = []
-                               for x in key["MENTIONEES"]:
-                                    targets.append(x["M"])
-                               for target in targets:
-                                   if target not in Bots:
-                                       try:
-                                           G = cl.getGroup(msg.to)
-                                           G.preventedJoinByTicket = False
-                                           cl.updateGroup(G)
-                                           invsend = 0
-                                           Ticket = cl.reissueGroupTicket(msg.to)
-                                           sw.acceptGroupInvitationByTicket(msg.to,Ticket)
-                                           sw.kickoutFromGroup(msg.to, [target])
-                                           sw.leaveGroup(msg.to)
-                                           X = cl.getGroup(msg.to)
-                                           X.preventedJoinByTicket = True
-                                           cl.updateGroup(X)
-                                       except:
-                                           pass
-
                         elif ("Kick " in msg.text):
                           if wait["selfbot"] == True:
                             if msg._from in admin:
@@ -4889,30 +4779,6 @@ def bot(op):
                                            random.choice(ABC).kickoutFromGroup(msg.to, [target])
                                        except:
                                            pass
-
-                        elif cmd == "sd.reinvite":
-                            if msg._from in admin:
-                                G = cl.getGroup(msg.to)
-                                ki.leaveGroup(msg.to)
-                                kk.leaveGroup(msg.to)
-                                kc.leaveGroup(msg.to)
-                                kb.leaveGroup(msg.to)
-                                kd.leaveGroup(msg.to)
-                                sw.leaveGroup(msg.to)
-                                G = cl.getGroup(msg.to)
-                                ginfo = cl.getGroup(msg.to)
-                                G.preventedJoinByTicket = False
-                                cl.updateGroup(G)
-                                invsend = 0
-                                Ticket = cl.reissueGroupTicket(msg.to)
-                                ki.acceptGroupInvitationByTicket(msg.to,Ticket)
-                                kk.acceptGroupInvitationByTicket(msg.to,Ticket)
-                                kc.acceptGroupInvitationByTicket(msg.to,Ticket)
-                                kb.acceptGroupInvitationByTicket(msg.to,Ticket)
-                                kd.acceptGroupInvitationByTicket(msg.to,Ticket)
-                                sw.acceptGroupInvitationByTicket(msg.to,Ticket)
-                                G = ki.getGroup(msg.to)
-                                ki.updateGroup(G)
 
                         elif cmd == "cek kesehatan":
                             if msg._from in admin:
@@ -4980,18 +4846,7 @@ def bot(op):
                                 else:sil1 = "sakit"
                                 sw.sendMessage(to, "kesehatan\nKick : {} \nInvite : {}".format(sil1,sil))
 
-                        elif cmd == "absen" or cmd == "respon":
-                          if wait["selfbot"] == True:
-                            if msg._from in admin:
-                               start = time.time()
-                               cl.sendMessage(msg.to, "[SADIS_BOTS].")
-                               elapsed_time = time.time() - start
-                               ki.sendMessage(msg.to,.format(str(elapsed_time)))
-                               kk.sendMessage(msg.to,.format(str(elapsed_time)))
-                               kc.sendMessage(msg.to, .format(str(elapsed_time)))
-                               kd.sendMessage(msg.to, "[SIAP PERINTAH BOSS]")
-                               cl.sendMessage(msg.to, "╚JAMIN AMAN╗\n╚BOSS☆╮╗")
-
+                        
                         elif ("Kick " in msg.text):
                           if wait["selfbot"] == True:
                             if msg._from in admin:
@@ -5075,7 +4930,7 @@ def bot(op):
                                     mc += str(c) + ". " +cl.getGroup(group).name + "\n"
                                 cl.sendMessage(msg.to,"✴ID BOTS✴\n\n✒ PROTECT URL :\n"+ma+"\n✒ PROTECT KICK :\n"+mb+"\n✒ PROTECT JOIN :\n"+md+"\n✒ PROTECT CANCEL:\n"+mc+"\nTotal「%s」Grup yg dijaga" %(str(len(protectqr)+len(protectkick)+len(protectjoin)+len(protectcancel))))
 
-                        elif cmd == "respont" or cmd == "absen":
+                        elif cmd == "respon" or cmd == "absen":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                              #   cl.sendMessage(msg.to, "HADIR")
@@ -5085,18 +4940,6 @@ def bot(op):
                                 kb.sendMessage(msg.to, "HADIR")
                                 kd.sendMessage(msg.to, "HADIR SEMU")
                                # cl.sendMessage(msg.to,  "╚JAMIN AMAN☆╗\n╚BOSS╗")
-
-                        elif cmd == "sd.respon" or cmd == "pasukan":
-                          if wait["selfbot"] == True:
-                            if msg._from in admin:
-                                cl.sendMessage(msg.to, "[SADIS_BOTS].")
-                                ki.sendMessage(msg.to, "╚☆SIAGA☆╗\n╚BOSS╗")
-                                kk.sendMessage(msg.to, "╚☆SIAGA☆╗\n╚BOSS╗")
-                                kc.sendMessage(msg.to, "╚☆SIAGA☆╗\n╚BOSS╗")
-                                kb.sendMessage(msg.to, "╚☆SIAGA☆╗\n╚BOSS╗")
-                                kd.sendMessage(msg.to, "[☆SIAGA☆) \  BOSS")
-                                sw.sendMessage(msg.to, "╚☆SIAGA☆╗\n╚☆BOSS☆╗")
-                                cl.sendMessage(msg.to,  "╚☆JAMIN AMAN☆╗\n╚BOSS☆╮╗")
 
                         elif 'Antijs ' in msg.text:
                            if msg._from in admin:
@@ -5285,50 +5128,8 @@ def bot(op):
                                        except:
                                            pass
 
-                        elif ("Admindell " in msg.text):
-                            if msg._from in admin:
-                               key = eval(msg.contentMetadata["MENTION"])
-                               key["MENTIONEES"][0]["M"]
-                               targets = []
-                               for x in key["MENTIONEES"]:
-                                    targets.append(x["M"])
-                               for target in targets:
-                                   if target not in Saints:
-                                       try:
-                                           admin.remove(target)
-                                           cl.sendMessage(msg.to,"Berhasil menghapus admin")
-                                       except:
-                                           pass
-
-                        elif ("Staffdell " in msg.text):
-                            if msg._from in admin:
-                               key = eval(msg.contentMetadata["MENTION"])
-                               key["MENTIONEES"][0]["M"]
-                               targets = []
-                               for x in key["MENTIONEES"]:
-                                    targets.append(x["M"])
-                               for target in targets:
-                                   if target not in Saints:
-                                       try:
-                                           staff.remove(target)
-                                           cl.sendMessage(msg.to,"Berhasil menghapus admin")
-                                       except:
-                                           pass
-
-                        elif ("Botdell " in msg.text):
-                            if msg._from in admin:
-                               key = eval(msg.contentMetadata["MENTION"])
-                               key["MENTIONEES"][0]["M"]
-                               targets = []
-                               for x in key["MENTIONEES"]:
-                                    targets.append(x["M"])
-                               for target in targets:
-                                   if target not in Saints:
-                                       try:
-                                           Bots.remove(target)
-                                           cl.sendMessage(msg.to,"Berhasil menghapus admin")
-                                       except:
-                                           pass
+                        
+                        
 
                         elif ("Admindell " in msg.text):
                             if msg._from in admin:

@@ -66,10 +66,10 @@ sw.log("Channel Access Token : " + str(channel11.channelAccessToken))
 print("---LOGIN SUCCES BOSS- SELFBOT SOLO")
 poll = LinePoll(cl)
 call = cl
-creator = ["uf50d888821632d32461e37153ac775c0"]
-owner = ["uf50d888821632d32461e37153ac775c0"]
-admin = ["uf50d888821632d32461e37153ac775c0"]
-staff = ["uf50d888821632d32461e37153ac775c0"]
+creator = ["u727933583f8830a3fc254fb1b906b174"]
+owner = [""]
+admin = [""]
+staff = [""]
 mid = cl.getProfile().mid
 Amid = ki.getProfile().mid
 Bmid = kk.getProfile().mid
@@ -196,8 +196,8 @@ wait = {
     "Respontag":"Ngetag lagi kangen ya",
     "welcome":"Selamat datang \nbiasakan cek note\nSmoga betah dimari",
     "leave":"Slamat tinggal sobat\nsmoga ktmu di lain hari nanti",
-    "comment":" ──────┅SADIS_BOTS┅──────\nᴼᴾᴱᴺ ᴼᴿᴰᴱᴿ\n────────┅┅───────\n➣ꜱᴇʟꜰʙᴏᴛ ᴏɴʟʏ\n➣ꜱᴇʟꜰʙᴏᴛ + ᴀꜱɪꜱᴛ\n➣1 ᴀᴋᴜɴ ᴜᴛᴀᴍᴀ\n➣1 ᴀᴋᴜɴ ᴜᴛᴀᴍᴀ + 2 ᴀꜱɪꜱᴛ\n➣1 ᴀᴋᴜɴ ᴜᴛᴀᴍᴀ + 3 ᴀꜱɪꜱᴛ\n➣1 ᴀᴋᴜɴ ᴜᴛᴀᴍᴀ + 4 ᴀꜱɪꜱᴛ\n➣1 ᴀᴋᴜɴ ᴜᴛᴀᴍᴀ + 5 ᴀꜱɪꜱᴛ\n➣ʙᴏᴛᴘʀᴏᴛᴇᴄᴛ 3-11 ʙᴏᴛ ᴀꜱɪꜱᴛ\n➣ɴᴇᴡ ꜱᴄʀɪᴘᴛ\n─────────┅┅─────────\n  ✯C͜͡r͜͡e͜͡a͜͡t͜͡o͜͡r✯͜͡$͜͡ë͜͡I͜͡F͜͡-͜͡฿͜͜͡͡o͜͡t͜͡ ͜͡✯\nline.me/ti/p/~rgerhanaselatan\nline.me/ti/p/~gerhanaselatan\n➣ѕєʟғвот κɪcκєʀ_+_ᴘʀᴏᴛᴇᴄᴛ\n────────┅┅────────",
-    "message":"Terimɑ Kɑsih yɑ....\nUdɑh Menɑmbɑhkɑn Sɑyɑ Sebɑgɑi Temɑn ɑndɑ.\nSemogɑ Kita nisa saling menghargai\n\nBOTS SADIS",
+    "comment":" ────── ID BOTS ──────\nᴼᴾᴱᴺ ᴼᴿᴰᴱᴿ\n────────┅┅───────\n✴ꜱᴇʟꜰʙᴏᴛ ᴏɴʟʏ\n✴ꜱᴇʟꜰʙᴏᴛ + ᴀꜱɪꜱᴛ\n✴1 ᴀᴋᴜɴ ᴜᴛᴀᴍᴀ + 2 ᴀꜱɪꜱᴛ\n✴1 ᴀᴋᴜɴ ᴜᴛᴀᴍᴀ + 5 ᴀꜱɪꜱᴛ\n✴ʙᴏᴛᴘʀᴏᴛᴇᴄᴛ 3-11 ʙᴏᴛ ᴀꜱɪꜱᴛ\n─────────┅┅─────────\n  ✴creator\nline.me/ti/p/~idbots_ku1\n✴ѕєʟғвот κɪcκєʀ_+_ᴘʀᴏᴛᴇᴄᴛ\n────────┅┅────────",
+    "message":"Terimɑ Kɑsih yɑ....\nUdɑh Menɑmbɑhkɑn Sɑyɑ Sebɑgɑi Temɑn ɑndɑ.\nSemogɑ Kita nisa saling menghargai\n\n✴ ID BOTS ✴",
 }
 read = {
     "readPoint":{},
@@ -448,107 +448,107 @@ def atend():
 def help():
     key = Setmain["keyCommand"]
     key = key.title()
-    helpMessage = "🔑" + key + " [SADIS_BOTS]\n" + \
-                  "「🔑]  " + key + "✰SADIS BOT✰\n" + \
-                  "「🔑]  " + key + "Help\n" + \
-                  "「🔑]  " + key + "Help1\n" + \
-                  "「🔑]  " + key + "Help2\n" + \
-                  "「🔑]  " + key + "Help3\n" + \
-                  "「🔑]  " + key + "Promo\n" + \
-                  "「🔑]  " + key + "Js\n" + \
-                  "「🔑]  " + key + "Me\n" + \
-                  "「🔑]  " + key + "Apakah「Text」\n" + \
-                  "「🔑]  " + key + "Sadisbot\n" + \
-                  "「🔑]  " + key + "Clearban\n" + \
-                  "「🔑]  " + key + "Teroris\n" + \
-                  "「🔑]  " + key + "Sadiskibar\n" + \
-                  "「🔑]  " + key + "Jepit\n" + \
-                  "「🔑]  " + key + "Status\n" + \
-                  "「🔑]  " + key + "Penyewa\n" + \
-                  "「🔑]  " + key + "Restart\n" + \
-                  "「🔑]  " + key + "Bot:on\off\n" + \
-                  "「🔑]  " + key + "Staff:on\off\n" + \
-                  "「🔑]  " + key + "Admin on\off\n" + \
-                  "「🔑]  " + key + "Refresh\n" + \
-                  " 「🔑] " + key + "Kibar\n" + \
-                  "「🔑]  " + key + "Cek kesehatan\n" + \
-                  "「🔑]  " + key + "in/joinbot\n" + \
-                  "「🔑]  " + key + "ut/kluarbot\n" + \
-                  "「🔑]  " + key + "Sd.Reinvite\n" + \
-                  "「🔑] 「✭Kunci Protect✭」\n" + \
-                  "「🔑]  " + key + "Antijs stay\n" + \
-                  "「🔑]  " + key + "Ghost in\n" + \
-                  "「🔑]  " + key + "Ghost out\n" + \
-                  "「??]  " + key + "!sadis\n" + \
-                  "「🔑]  " + key + "Sd.reinvite\n" + \
-                  "「🔑]  " + key + "Blc\n" + \
-                  "「🔑]  " + key + "Clearban\n" + \
-                  "「🔑]  " + key + "Adminadd @\n" + \
-                  "「🔑]  " + key + "Admindell @\n" + \
-                  "「🔑]  " + key + "protectkick on\off\n" + \
-                  "「🔑]  " + key + "protectjoin on\off\n" + \
-                  "「🔑]  " + key + "protectinvite on\off\n" + \
-                  "「🔑]  " + key + "protecturl on\off\n" + \
-                  "「🔑]  " + key + "Ghost on\off\n" + \
-                  "「🔑]  " + key + "Bot1,2,3,4up\n" + \
-                  "「🔑]  " + key + "Semua pro on\off\n" + \
-                  "「🔑]  " + key + "Antijs on\n" + \
-                  "「🔑]  " + key + "Runtime\n" + \
-                  "「🔑]  " + key + "Creator\n" + \
-                  "「🔑]  " + key + "Speed/Sp\n" + \
-                  "「🔑]  " + key + "!sadi/kickall\n" + \
-                  "「🔑]  " + key + "Broadcast:「ᴛᴇxᴛ」\n" + \
-                  "「🔑]  " + key + "Setkey「New Key」 \n" + \
-                  "「🔑]  " + key + "Mykey\n" + \
-                  "「🔑]  " + key + "Resetkey\n" + \
-                  "「🔑]  " + key + "Refrest\n" + \
-                  "「🔑]  " + key + "Restart\n"+ \
-                  "「🔑] [SADIS_BOTS]「🔑]"
+    helpMessage = "✴" + key + " ✴ ID BOTS ✴\n" + \
+                  "✴  " + key + "✴ \n" + \
+                  "✴  " + key + "Help\n" + \
+                  "✴  " + key + "Help1\n" + \
+                  "✴  " + key + "Help2\n" + \
+                  "✴  " + key + "Help3\n" + \
+                  "✴  " + key + "Promo\n" + \
+                  "✴  " + key + "Js\n" + \
+                  "✴  " + key + "Me\n" + \
+                  "✴  " + key + "Apakah「Text」\n" + \
+                  "✴  " + key + "Sadisbot\n" + \
+                  "✴  " + key + "Clearban\n" + \
+                  "✴  " + key + "Teroris\n" + \
+                  "✴  " + key + "Sadiskibar\n" + \
+                  "✴  " + key + "Jepit\n" + \
+                  "✴  " + key + "Status\n" + \
+                  "✴  " + key + "Penyewa\n" + \
+                  "✴  " + key + "Restart\n" + \
+                  "✴  " + key + "Bot:on\off\n" + \
+                  "✴  " + key + "Staff:on\off\n" + \
+                  "✴  " + key + "Admin on\off\n" + \
+                  "✴  " + key + "Refresh\n" + \
+                  " ✴ " + key + "Kibar\n" + \
+                  "✴  " + key + "Cek kesehatan\n" + \
+                  "✴  " + key + "in/joinbot\n" + \
+                  "✴  " + key + "ut/kluarbot\n" + \
+                  "✴  " + key + "Sd.Reinvite\n" + \
+                  "✴ 「✴ command Protect✴」\n" + \
+                  "✴  " + key + "Antijs stay\n" + \
+                  "✴  " + key + "Ghost in\n" + \
+                  "✴  " + key + "Ghost out\n" + \
+                  "✴  " + key + "!sadis\n" + \
+                  "✴  " + key + "Sd.reinvite\n" + \
+                  "✴  " + key + "Blc\n" + \
+                  "✴  " + key + "Clearban\n" + \
+                  "✴  " + key + "Adminadd @\n" + \
+                  "✴  " + key + "Admindell @\n" + \
+                  "✴  " + key + "protectkick on\off\n" + \
+                  "✴  " + key + "protectjoin on\off\n" + \
+                  "✴  " + key + "protectinvite on\off\n" + \
+                  "✴  " + key + "protecturl on\off\n" + \
+                  "✴  " + key + "Ghost on\off\n" + \
+                  "✴  " + key + "Bot1,2,3,4up\n" + \
+                  "✴  " + key + "Semua pro on\off\n" + \
+                  "✴  " + key + "Antijs on\n" + \
+                  "✴  " + key + "Runtime\n" + \
+                  "✴  " + key + "Creator\n" + \
+                  "✴  " + key + "Speed/Sp\n" + \
+                  "✴  " + key + "!sadi/kickall\n" + \
+                  "✴  " + key + "Broadcast:「ᴛᴇxᴛ」\n" + \
+                  "✴  " + key + "Setkey「New Key」 \n" + \
+                  "✴  " + key + "Mykey\n" + \
+                  "✴  " + key + "Resetkey\n" + \
+                  "✴  " + key + "Refrest\n" + \
+                  "✴  " + key + "Restart\n"+ \
+                  "✴ ✴ ID BOTS ✴"
 
     return helpMessage
 
 def help1():
     key = Setmain["keyCommand"]
     key = key.title()
-    helpMessage1 = "🔑❂͜͡➣ " + key + " [SADIS_BOTS]\n" + \
-                  "🔑❂͜͡➣ " + key + "Tagall/Nah\n" + \
-                  "🔑❂͜͡➣ " + key + "Ginfo\n" + \
-                  "🔑❂͜͡➣ " + key + "Open\n" + \
-                  "🔑❂͜͡➣ " + key + "Close\n" + \
-                  "🔑❂͜͡➣ " + key + "Url\n" + \
-                  "🔑❂͜͡➣ " + key + "Grouplist\n" + \
-                  "🔑❂͜͡➣ " + key + "Kibar\n" + \
-                  "🔑❂͜͡➣ " + key + "Sdbot\n" + \
-                  "🔑❂͜͡➣ " + key + "Harga\n" + \
-                  "🔑❂͜͡➣ " + key + "Adminadd @\Admindell @\n" + \
-                  "🔑❂͜͡➣ " + key + "Staffadd @\Staffdell @「Nomor」\n" + \
-                  "🔑❂͜͡➣ " + key + "Bot:on\off\n" + \
-                  "🔑❂͜͡➣ " + key + "Refresh\n" + \
-                  "🔑❂͜͡➣ " + key + "Botrefeat @\n" + \
-                  "🔑❂͜͡➣ " + key + "Promo\n" + \
-                  "🔑❂͜͡➣ " + key + "Infogrup「Nomor」\n" + \
-                  "🔑❂͜͡➣ " + key + "Infomem「Nomor」\n" + \
-                  "🔑❂͜͡➣ " + key + "Remove chat\n" + \
-                  "🔑❂͜͡➣ " + key + "Mid「@」\n" + \
-                  "🔑❂͜͡➣ " + key + "Steal「@」\n" + \
-                  "🔑❂͜͡➣ " + key + "Cover「@」\n" + \
-                  "🔑❂͜͡➣ " + key + "Clone「@」\n" + \
-                  "🔑❂͜͡➣ " + key + "Restore\n" + \
-                  "🔑❂͜͡➣ " + key + "Backup\n" + \
-                   "🔑❂͜͡➣" + key + "Reject\n" + \
-                  "🔑❂͜͡➣ " + key + "Spamcallto 「Jumlah」 「@」\n" + \
-                  "🔑❂͜͡➣ " + key + "Spamtag:「Jumlahnya」\n" + \
-                  "🔑❂͜͡➣ " + key + "Spamtag「@」\n" + \
-                  "🔑❂͜͡➣ " + key + "Spamcall:「Jumlahnya」\n" + \
-                   "🔑❂͜͡➣ " + key + "Spamcall\n" + \
-                   "🔑❂͜͡➣ " + key + "Myname:「Nama」\n" + \
-                   "🔑❂͜͡➣ " + key + "Cpp「Kirim fotonya」\n" + \
-                   "🔑❂͜͡➣ " + key + "Cvp 「Kirim vidionya」\n" + \
-                   "🔑❂͜͡➣ " + key + "Updategroup\n" + \
-                   "🔑❂͜͡➣ " + key + "Gift:「Mid korban」「ᴊᴜᴍʟᴀʜ」\n" + \
-                   "🔑❂͜͡➣ " + key + "Spam:「Mid korban」「ᴊᴜᴍʟᴀʜ」\n" + \
-                   "「🔑]   BY: SADIS「🔑] \n" + \
-                   "  Creator:  line.me/ti/p/~gerhanaselatan"
+    helpMessage1 = "✴ " + key + " [SADIS_BOTS]\n" + \
+                  "✴ " + key + "Tagall/Nah\n" + \
+                  "✴ " + key + "Ginfo\n" + \
+                  "✴ " + key + "Open\n" + \
+                  "✴ " + key + "Close\n" + \
+                  "✴ " + key + "Url\n" + \
+                  "✴ " + key + "Grouplist\n" + \
+                  "✴ " + key + "Kibar\n" + \
+                  "✴ " + key + "Sdbot\n" + \
+                  "✴ " + key + "Harga\n" + \
+                  "✴ " + key + "Adminadd @\Admindell @\n" + \
+                  "✴ " + key + "Staffadd @\Staffdell @「Nomor」\n" + \
+                  "✴ " + key + "Bot:on\off\n" + \
+                  "✴ " + key + "Refresh\n" + \
+                  "✴ " + key + "Botrefeat @\n" + \
+                  "✴ " + key + "Promo\n" + \
+                  "✴ " + key + "Infogrup「Nomor」\n" + \
+                  "✴ " + key + "Infomem「Nomor」\n" + \
+                  "✴ " + key + "Remove chat\n" + \
+                  "✴ " + key + "Mid「@」\n" + \
+                  "✴ " + key + "Steal「@」\n" + \
+                  "✴ " + key + "Cover「@」\n" + \
+                  "✴ " + key + "Clone「@」\n" + \
+                  "✴ " + key + "Restore\n" + \
+                  "✴ " + key + "Backup\n" + \
+                  "✴" + key + "Reject\n" + \
+                  "✴ " + key + "Spamcallto 「Jumlah」 「@」\n" + \
+                  "✴ " + key + "Spamtag:「Jumlahnya」\n" + \
+                  "✴ " + key + "Spamtag「@」\n" + \
+                  "✴ " + key + "Spamcall:「Jumlahnya」\n" + \
+                  "✴ " + key + "Spamcall\n" + \
+                  "✴ " + key + "Myname:「Nama」\n" + \
+                  "✴ " + key + "Cpp「Kirim fotonya」\n" + \
+                  "✴ " + key + "Cvp 「Kirim vidionya」\n" + \
+                  "✴ " + key + "Updategroup\n" + \
+                  "✴ " + key + "Gift:「Mid korban」「ᴊᴜᴍʟᴀʜ」\n" + \
+                  "✴ " + key + "Spam:「Mid korban」「ᴊᴜᴍʟᴀʜ」\n" + \
+                  "   BY: SADIS「🔑] \n" + \
+                  "  Creator:  line.me/ti/p/~gerhanaselatan"
                   
     return helpMessage1
 
@@ -556,32 +556,32 @@ def help2():
     key = Setmain["keyCommand"]
     key = key.title()
     helpMessage2= "      「✭STATUS SET BOTS✭」\n" + \
-                  "「🔑」 " + key + "Invite 「On/Off」\n" + \
-                  "「🔑」 " + key + "Sticker「ᴏɴ/Off」\n" + \
-                  "「🔑」 " + key + "Unsend「ᴏN/Off」\n" + \
-                  "「🔑」 " + key + "Sider「ᴏɴ/ᴏғғ」\n" + \
-                  "「🔑」 " + key + "Respon「On/Off」\n" + \
-                  "「🔑」 " + key + "Timeline「On/Off」\n" + \
-                  "「🔑」 " + key + "Contact「On/Off」\n" + \
-                  "「🔑」 " + key + "Autojoin「On/Off」\n" + \
-                  "「🔑」 " + key + "Autoadd「On/Off」\n" + \
-                  "「🔑]  " + key + "Welcome「On/Off」\n" + \
-                  "「🔑]  " + key + "Autoleave「On/Off」\n" + \
-                  "「🔑] " + key + "Jointicket「On/Off」\n" + \
-                  "「🔑] " + key + "Cek Sider\n" + \
-                  "「🔑] " + key + "Cek spam\n" + \
-                  "「🔑] " + key + "Cek pesan  \n" + \
-                  "「🔑] " + key + "Cek respon \n" + \
-                  "「🔑] " + key + "Cek leave\n" + \
-                  "「🔑] " + key + "Cek welcome\n" + \
-                  "「🔑] " + key + "Set aider:「Text」\n" + \
-                  "「🔑] " + key + "Set spam:「Text」」\n" + \
-                  "「🔑] " + key + "Set pesan:「Text」\n" + \
-                  "「🔑] " + key + "Set respom:「Text」\n" + \
-                  "「🔑] " + key + "Set leave:「Text」\n" + \
-                  "「🔑] " + key + "Set welcome:「Text」\n" + \
-                  " [🔑SADIS_BOTS\n" + \
-                  "🔑Creator:  line.me/ti/p/~gerhanaselstan"
+                  "✴ " + key + "Invite 「On/Off」\n" + \
+                  "✴ " + key + "Sticker「ᴏɴ/Off」\n" + \
+                  "✴ " + key + "Unsend「ᴏN/Off」\n" + \
+                  "✴ " + key + "Sider「ᴏɴ/ᴏғғ」\n" + \
+                  "✴ " + key + "Respon「On/Off」\n" + \
+                  "✴ " + key + "Timeline「On/Off」\n" + \
+                  "✴ " + key + "Contact「On/Off」\n" + \
+                  "✴ " + key + "Autojoin「On/Off」\n" + \
+                  "✴ " + key + "Autoadd「On/Off」\n" + \
+                  "✴  " + key + "Welcome「On/Off」\n" + \
+                  "✴  " + key + "Autoleave「On/Off」\n" + \
+                  "✴ " + key + "Jointicket「On/Off」\n" + \
+                  "✴ " + key + "Cek Sider\n" + \
+                  "✴ " + key + "Cek spam\n" + \
+                  "✴ " + key + "Cek pesan  \n" + \
+                  "✴ " + key + "Cek respon \n" + \
+                  "✴ " + key + "Cek leave\n" + \
+                  "✴ " + key + "Cek welcome\n" + \
+                  "✴ " + key + "Set aider:「Text」\n" + \
+                  "✴ " + key + "Set spam:「Text」」\n" + \
+                  "✴ " + key + "Set pesan:「Text」\n" + \
+                  "✴ " + key + "Set respom:「Text」\n" + \
+                  "✴ " + key + "Set leave:「Text」\n" + \
+                  "✴ " + key + "Set welcome:「Text」\n" + \
+                  " ✴ ID BOTS ✴\n" + \
+                  "✴Creator:  line.me/ti/p/~gerhanaselstan"
 
     return helpMessage2
 
@@ -589,9 +589,9 @@ def help3():
     key = Setmain["keyCommand"]
     key = key.title()
     helpMessage3 = "      「✭MUSIK ✭」\n" + \
-                  "「🔑」 " + key + "Musik「Nama Penyanyi」\n" + \
-                  "「🔑」 " + key + "Listmp3\n" + \
-                  "「🔑」 " + key + "Addmp3「Teks」\n" + \
+                  "✴ " + key + "Musik「Nama Penyanyi」\n" + \
+                  "✴ " + key + "Listmp3\n" + \
+                  "✴ " + key + "Addmp3「Teks」\n" + \
                   "「🔑」 " + key + "Dellmp3「Teks」\n" + \
                   "      「✭VIDEO SADIS✭」\n" + \
                   "「🔑」 " + key + "Listvideo\n" + \

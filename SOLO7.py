@@ -23,53 +23,53 @@ import youtube_dl
 #SEMOGA BERMANFAAT,,,TEGUH S..
 
 
-cl = LineClient("email","sandi")
+cl = LineClient()
 cl.log("Auth Token : " + str(cl.authToken))
 channel1 = LineChannel(cl,cl.server.CHANNEL_ID['LINE_TIMELINE'])
 cl.log("Channel Access Token : " + str(channel1.channelAccessToken))
 
 
-ki = LineClient("email","sandi)
+ki = LineClient()
 ki.log("Auth Token : " + str(ki.authToken))
 channel1 = LineChannel(ki,ki.server.CHANNEL_ID['LINE_TIMELINE'])
 ki.log("Channel Access Token : " + str(channel1.channelAccessToken))
 
 
-kk = LineClient("email","sandi")
+kk = LineClient()
 kk.log("Auth Token : " + str(kk.authToken))
 channel2 = LineChannel(kk)
 kk.log("Channel Access Token : " + str(channel2.channelAccessToken))
 
 
-kc = LineClient("email","sandi")
+kc = LineClient()
 kc.log("Auth Token : " + str(kc.authToken))
 channel3 = LineChannel(kc)
 kc.log("Channel Access Token : " + str(channel3.channelAccessToken))
 
 
-kb = LineClient("email","sandi")
+kb = LineClient()
 kb.log("Auth Token : " + str(kb.authToken))
 channel4 = LineChannel(kb)
 kb.log("Channel Access Token : " + str(channel3.channelAccessToken))
 
 
-kd = LineClient("email","sandi")
+kd = LineClient()
 kd.log("Auth Token : " + str(kd.authToken))
 channel5 = LineChannel(kd)
 kd.log("Channel Access Token : " + str(channel5.channelAccessToken))
 
 
-sw = LineClient("email","sandi")
+sw = LineClient()
 sw.log("Auth Token : " + str(sw.authToken))
 channel11 = LineChannel(sw)
 sw.log("Channel Access Token : " + str(channel11.channelAccessToken))
-print("---LOGIN SUCCES BOSS- SELFBOT SOLO")
+print("---LOGIN SUCCES ID BOST")
 poll = LinePoll(cl)
 call = cl
 creator = ["u727933583f8830a3fc254fb1b906b174"]
-owner = [""]
-admin = [""]
-staff = [""]
+owner = ["u727933583f8830a3fc254fb1b906b174"]
+admin = ["u727933583f8830a3fc254fb1b906b174"]
+staff = ["u727933583f8830a3fc254fb1b906b174"]
 mid = cl.getProfile().mid
 Amid = ki.getProfile().mid
 Bmid = kk.getProfile().mid
@@ -547,15 +547,15 @@ def help1():
                   "✴ " + key + "Updategroup\n" + \
                   "✴ " + key + "Gift:「Mid korban」「ᴊᴜᴍʟᴀʜ」\n" + \
                   "✴ " + key + "Spam:「Mid korban」「ᴊᴜᴍʟᴀʜ」\n" + \
-                  "   BY: SADIS「🔑] \n" + \
-                  "  Creator:  line.me/ti/p/~gerhanaselatan"
+                  "   ✴✴✴✴✴✴✴✴✴✴\n" + \
+                  "  Creator:  line.me/ti/p/~idbots_ku1"
                   
     return helpMessage1
 
 def help2():
     key = Setmain["keyCommand"]
     key = key.title()
-    helpMessage2= "      「✭STATUS SET BOTS✭」\n" + \
+    helpMessage2= "      ✴SETTINGS BOTS✴\n" + \
                   "✴ " + key + "Invite 「On/Off」\n" + \
                   "✴ " + key + "Sticker「ᴏɴ/Off」\n" + \
                   "✴ " + key + "Unsend「ᴏN/Off」\n" + \
@@ -580,55 +580,42 @@ def help2():
                   "✴ " + key + "Set respom:「Text」\n" + \
                   "✴ " + key + "Set leave:「Text」\n" + \
                   "✴ " + key + "Set welcome:「Text」\n" + \
-                  " ✴ ID BOTS ✴\n" + \
-                  "✴Creator:  line.me/ti/p/~gerhanaselstan"
+                  " ✴✴✴✴✴✴✴✴✴✴\n" + \
+                  "✴Creator:  line.me/ti/p/~idbots_ku1"
 
     return helpMessage2
 
 def help3():
     key = Setmain["keyCommand"]
     key = key.title()
-    helpMessage3 = "      「✭MUSIK ✭」\n" + \
+    helpMessage3 = "      ✴ID BOTS ✴\n" + \
                   "✴ " + key + "Musik「Nama Penyanyi」\n" + \
                   "✴ " + key + "Listmp3\n" + \
                   "✴ " + key + "Addmp3「Teks」\n" + \
-                  "「🔑」 " + key + "Dellmp3「Teks」\n" + \
-                  "      「✭VIDEO SADIS✭」\n" + \
-                  "「🔑」 " + key + "Listvideo\n" + \
-                  "「🔑」 " + key + "Addvideo「Teks」\n" + \
-                  "「🔑」 " + key + "Dellvideo「Teks」\n" + \
-                  "      「✭GAMBAR SADIS✭」\n" + \
-                  "「🔑」 " + key + "Listimage\n" + \
-                  "「🔑」 " + key + "Addimg「Teks」\n" + \
-                  "「🔑」 " + key + "Dellimg「Teks」\n" + \
-                  "      「✭STICKER SADIS✭」\n" + \
-                  "「🔑」 " + key + "Liststicker\n" + \
-                  "「🔑」 " + key + "Addsticker「Teks」\n" + \
-                  "「🔑」 " + key + "Dellsticker「Teks」\n" + \
-                  "「🔑」 " + key + "Kode wilayah\n" + \
-                  "      「✭MEDIA LAIN ✭」\n" + \
-                  "「🔑」 " + key + "Lihat 「Kode wilayah cctv」\n" + \
-                  "「🔑」 " + key + "Youtube「Query」\n" + \
-                  "「🔑」 " + key + "Get-fs「Query」\n" + \
-                  "「🔑」 " + key + "Get-line「ID Line」\n" + \
-                  "「🔑」 " + key + "Get-apk「Query」\n" + \
-                  "「🔑」 " + key + "Get-gif「Query」\n" + \
-                  "「🔑」 " + key + "Get-xxx「Query」\n" + \
-                  "「🔑」 " + key + "Get-anime「Query」\n" + \
-                  "「🔑」 " + key + "Get-mimpi「Query」\n" + \
-                  "「🔑」 " + key + "Get-audio「Query」\n" + \
-                  "「🔑」 " + key + "Get-mp3「Query」\n" + \
-                  "「🔑」 " + key + "Get-video「Query」\n" + \
-                  "「🔑」 " + key + "Get-bintang「Zodiak」\n" + \
-                  "「🔑」 " + key + "Get-zodiak「Zodiak」\n" + \
-                  "「🔑」 " + key + "Get-sholat「Nama Kota」\n" + \
-                  "「🔑」 " + key + "Get-cuaca「Nama Kota」\n" + \
-                  "「🔑」 " + key + "Get-lokasi「Nama Kota」\n" + \
-                  "「🔑」 " + key + "Get-lirik「Judul Lagu」\n" + \
-                  "「🔑」 " + key + "Get-instagram「User Name」\n" + \
-                  "「🔑」 " + key + "Get-date「tgl-bln-thn」\n" + \
-                  "「🔑」BY: SADIS_BOTS\n" + \
-                  "  Creator:  line.me/ti/p/~gerhanaselatan"
+                  "✴ " + key + "Dellmp3「Teks」\n" + \
+                  "✴ " + key + "Listvideo\n" + \
+                  "✴ " + key + "Addvideo「Teks」\n" + \
+                  "✴ " + key + "Dellvideo「Teks」\n" + \
+                  "✴ " + key + "Listimage\n" + \
+                  "✴ " + key + "Addimg「Teks」\n" + \
+                  "✴ " + key + "Dellimg「Teks」\n" + \
+                  "✴ " + key + "Liststicker\n" + \
+                  "✴ " + key + "Addsticker「Teks」\n" + \
+                  "✴ " + key + "Dellsticker「Teks」\n" + \
+                  "✴ " + key + "Kode wilayah\n" + \
+                  "✴ " + key + "Get-audio「Query」\n" + \
+                  "✴ " + key + "Get-mp3「Query」\n" + \
+                  "✴ " + key + "Get-video「Query」\n" + \
+                  "✴ " + key + "Get-bintang「Zodiak」\n" + \
+                  "✴ " + key + "Get-zodiak「Zodiak」\n" + \
+                  "✴ " + key + "Get-sholat「Nama Kota」\n" + \
+                  "✴ " + key + "Get-cuaca「Nama Kota」\n" + \
+                  "✴ " + key + "Get-lokasi「Nama Kota」\n" + \
+                  "✴ " + key + "Get-lirik「Judul Lagu」\n" + \
+                  "✴ " + key + "Get-instagram「User Name」\n" + \
+                  "✴ " + key + "Get-date「tgl-bln-thn」\n" + \
+                  "✴✴✴✴✴✴✴✴✴✴✴\n" + \
+                  "  Creator:  line.me/ti/p/~idbots_ku1"
 
     return helpMessage3
 
@@ -793,7 +780,7 @@ def bot(op):
                         group = cl.getGroup(op.param1)
                         gMembMids = [contact.mid for contact in group.invitee]
                         for _mid in gMembMids:
-                            cl.cancelGroupInvitation(op.param1,[_mid])
+                            kb.cancelGroupInvitation(op.param1,[_mid])
                     except:
                         try:
                             group = ki.getGroup(op.param1)
@@ -861,7 +848,7 @@ def bot(op):
                             except:
                                 try:
                                     if op.param3 not in wait["blacklist"]:
-                                        cl.kickoutFromGroup(op.param1,[op.param2])
+                                        ki.kickoutFromGroup(op.param1,[op.param2])
                                 except:
                                     try:
                                         if op.param3 not in wait["blacklist"]:
@@ -883,7 +870,7 @@ def bot(op):
                         pass
                     else:
                         cl.sendText(op.param1, wait["message"])
-                        cl.sendContact(op.param1, "uf50d888821632d32461e37153ac775c0")
+                        cl.sendContact(op.param1, "u727933583f8830a3fc254fb1b906b174")
                         cl.blockContact(op.param1)
 #================================================================================
         if op.type == 19:
@@ -935,14 +922,14 @@ def bot(op):
                         
                 if op.param3 in Zmid:
                     if op.param2 not in Bots and op.param2 not in owner and op.param2 not in admin and op.param2 not in staff:
-                        cl.kickoutFromGroup(op.param1,[op.param2])
-                        cl.findAndAddContactsByMid(op.param3)
-                        cl.inviteIntoGroup(op.param1,[Zmid])
+                        ki.kickoutFromGroup(op.param1,[op.param2])
+                        ki.findAndAddContactsByMid(op.param3)
+                        ki.inviteIntoGroup(op.param1,[Zmid])
                         cl.sendMessage(op.param1,"=AntiJS Invited=")
                     else:
-                        cl.kickoutFromGroup(op.param1,[op.param2])
-                        cl.findAndAddContactsByMid(op.param3)
-                        cl.inviteIntoGroup(op.param1,[Zmid])
+                       # cl.kickoutFromGroup(op.param1,[op.param2])
+                        ki.findAndAddContactsByMid(op.param3)
+                        ki.inviteIntoGroup(op.param1,[Zmid])
                         cl.sendMessage(op.param1,"=AntiJS Invited=")
                         
                 if op.param2 not in Bots and op.param2 not in owner and op.param2 not in admin and op.param2 not in staff:
@@ -999,16 +986,19 @@ def bot(op):
                     wait["blacklist"][op.param2] = True
                     try:
                         ki.kickoutFromGroup(op.param1,[op.param2])
+                        ki.findAndAddContactsByMid(op.param3)
                         ki.inviteIntoGroup(op.param1,[op.param3])
                         cl.acceptGroupInvitation(op.param1)
                     except:
                         try:
                             kk.kickoutFromGroup(op.param1,[op.param2])
+                            kk.findAndAddContactsByMid(op.param3)
                             kk.inviteIntoGroup(op.param1,[op.param3])
                             cl.acceptGroupInvitation(op.param1)
                         except:
                             try:
                                 kc.kickoutFromGroup(op.param1,[op.param2])
+                                kc.findAndAddContactsByMid(op.param3)
                                 kc.inviteIntoGroup(op.param1,[op.param3])
                                 cl.acceptGroupInvitation(op.param1)
                             except:
@@ -1022,6 +1012,8 @@ def bot(op):
                                     ki.acceptGroupInvitationByTicket(op.param1,Ticket)
                                     kk.acceptGroupInvitationByTicket(op.param1,Ticket)
                                     kc.acceptGroupInvitationByTicket(op.param1,Ticket)
+                                    kb.acceptGroupInvitationByTicket(op.param1,Ticket)
+                                    kd.acceptGroupInvitationByTicket(op.param1,Ticket)
                                     G = ki.getGroup(op.param1)
                                     G.preventedJoinByTicket = True
                                     ki.updateGroup(G)
@@ -1029,26 +1021,31 @@ def bot(op):
                                 except:
                                     try:
                                         ki.kickoutFromGroup(op.param1,[op.param2])
+                                        ki.findAndAddContactsByMid(op.param3)
                                         ki.inviteIntoGroup(op.param1,[op.param3])
                                         cl.acceptGroupInvitation(op.param1)
                                     except:
                                         try:
                                             kk.kickoutFromGroup(op.param1,[op.param2])
+                                            kk.findAndAddContactsByMid(op.param3).findAndAddContactsByMid(op.param3)
                                             kk.inviteIntoGroup(op.param1,[op.param3])
                                             cl.acceptGroupInvitation(op.param1)
                                         except:
                                             try:
                                                 kc.kickoutFromGroup(op.param1,[op.param2])
+                                                kc.findAndAddContactsByMid(op.param3)
                                                 kc.inviteIntoGroup(op.param1,[op.param3])
                                                 cl.acceptGroupInvitation(op.param1)
                                             except:
                                                 try:
                                                     kb.kickoutFromGroup(op.param1,[op.param2])
+                                                    kb.findAndAddContactsByMid(op.param3)
                                                     kb.inviteIntoGroup(op.param1,[op.param3])
                                                     cl.acceptGroupInvitation(op.param1)
                                                 except:
                                                     try:
                                                         kd.kickoutFromGroup(op.param1,[op.param2])
+                                                        kd.findAndAddContactsByMid(op.param3)
                                                         kd.inviteIntoGroup(op.param1,[op.param3])
                                                         cl.acceptGroupInvitation(op.param1)
                                                     except:

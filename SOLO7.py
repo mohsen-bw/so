@@ -2455,7 +2455,7 @@ def bot(op):
                                 zx = ""
                                 zxc = ""
                                 zx2 = []
-                                xpesan =  "「 TEAM: SADIS_BOTS 」\n• User : "
+                                xpesan =  "✴ ID BOTS\n• User : "
                                 ret_ = "• Group : {}\n".format(str(ginfo.name))
                                 ret_ += str(md)
                                 ry = str(ryan.displayName)
@@ -2471,7 +2471,7 @@ def bot(op):
                                 
                         elif cmd == "creator" or text.lower() == 'creator':
                             if msg._from in admin:
-                                cl.sendText(msg.to,"「CREATOR BOT\nPelindung Room Kita」") 
+                                cl.sendText(msg.to,"✴ ID BOTS ✴") 
                                 ma = ""
                                 for i in creator:
                                     ma = cl.getContact(i)
@@ -2504,7 +2504,7 @@ def bot(op):
                                 zx = ""
                                 zxc = ""
                                 zx2 = []
-                                xpesan =  "「 INFORMASI SELFBOT」\n• ༎  ༓USER : "
+                                xpesan =  "「 INFORMASI SELFBOT」\n• ༎  ✴USER : "
                                 ret_ = "✴ GROUP : {} GROUP".format(str(len(grouplist)))
                                 ret_ += "\n• ✴FRIEND : {} FRIEND".format(str(len(contactlist)))
                                 ret_ += "\n• ✴BLOCKED : {} BLOCKED".format(str(len(blockedlist)))

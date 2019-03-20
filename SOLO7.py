@@ -16,7 +16,7 @@ from datetime import datetime
 from gtts import gTTS
 import html5lib,shutil
 import wikipedia,goslate
-import ffmpy
+#import ffmpy
 from bs4 import BeautifulSoup
 from googletrans import Translator
 import youtube_dl
@@ -27,7 +27,7 @@ cl = LineClient()
 cl.log("Auth Token : " + str(cl.authToken))
 channel1 = LineChannel(cl,cl.server.CHANNEL_ID['LINE_TIMELINE'])
 cl.log("Channel Access Token : " + str(channel1.channelAccessToken))
-(
+
 
 ki = LineClient()
 ki.log("Auth Token : " + str(ki.authToken))
@@ -78,7 +78,7 @@ Dmid = kb.getProfile().mid
 Emid = kd.getProfile().mid
 Zmid = sw.getProfile().mid
 KAC = [cl,ki,kk,kc,kb,kd,sw]
-ABC = [ki,kk,kc,kb,kd,sw]
+ABC = [ki,kk,kc,kb,kd]
 Bots = [mid,Amid,Bmid,Cmid,Dmid,Emid,Zmid]
 Ghost = [sw]
 Dpk = admin + staff
@@ -462,14 +462,13 @@ def help():
                   "✴  " + key + "Clearban\n" + \
                   "✴  " + key + "inviteall\n" + \
                   "✴  " + key + "Status\n" + \
-                  "✴  " + key + "Penyewa\n" + \
+                  "✴  " + key + "about\n" + \
                   "✴  " + key + "Restart\n" + \
                   "✴  " + key + "Bot:on\off\n" + \
                   "✴  " + key + "Staff:on\off\n" + \
                   "✴  " + key + "Admin on\off\n" + \
                   "✴  " + key + "Refresh\n" + \
-                  " ✴ " + key + "Kibar\n" + \
-                  "✴  " + key + "Cek kesehatan\n" + \
+                  "✴  " + key + "Cek bot\n" + \
                   "✴  " + key + "in/joinbot\n" + \
                   "✴  " + key + "out/kluarbot\n" + \
                   "✴ 「✴ command Protect✴」\n" + \
@@ -506,21 +505,18 @@ def help1():
     key = Setmain["keyCommand"]
     key = key.title()
     helpMessage1 = "✴ " + key + " [ID BOTS]\n" + \
-                  "✴ " + key + "Tagall/Nah\n" + \
+                  "✴ " + key + "Tagall/tag\n" + \
                   "✴ " + key + "Ginfo\n" + \
                   "✴ " + key + "Open\n" + \
                   "✴ " + key + "Close\n" + \
                   "✴ " + key + "Url\n" + \
                   "✴ " + key + "Grouplist\n" + \
-                  "✴ " + key + "Kibar\n" + \
                   "✴ " + key + "respon\n" + \
-                  "✴ " + key + "Harga\n" + \
                   "✴ " + key + "Adminadd @\Admindell @\n" + \
                   "✴ " + key + "Staffadd @\Staffdell @「Nomor」\n" + \
                   "✴ " + key + "Bot:on\off\n" + \
                   "✴ " + key + "Refresh\n" + \
                   "✴ " + key + "Botrefeat @\n" + \
-                  "✴ " + key + "Promo\n" + \
                   "✴ " + key + "Infogrup「Nomor」\n" + \
                   "✴ " + key + "Infomem「Nomor」\n" + \
                   "✴ " + key + "Remove chat\n" + \
@@ -538,7 +534,7 @@ def help1():
                   "✴ " + key + "Spamcall\n" + \
                   "✴ " + key + "Myname:「Nama」\n" + \
                   "✴ " + key + "Cpp「Kirim fotonya」\n" + \
-                  "✴ " + key + "Cvp 「Kirim vidionya」\n" + \
+                  "✴ " + key + "bot1-5name:」\n" + \
                   "✴ " + key + "Updategroup\n" + \
                   "✴ " + key + "Gift:「Mid korban」「ᴊᴜᴍʟᴀʜ」\n" + \
                   "✴ " + key + "Spam:「Mid korban」「ᴊᴜᴍʟᴀʜ」\n" + \
@@ -1016,7 +1012,7 @@ def bot(op):
                                     kd.acceptGroupInvitationByTicket(op.param1,Ticket)
                                     G = ki.getGroup(op.param1)
                                     G.preventedJoinByTicket = True
-                                    ki.updateGroup(G)
+                                  #  ki.updateGroup(G)
                                     Ticket = ki.reissueGroupTicket(op.param1)
                                 except:
                                     try:

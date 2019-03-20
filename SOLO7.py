@@ -455,15 +455,12 @@ def help():
                   "✴  " + key + "Help1\n" + \
                   "✴  " + key + "Help2\n" + \
                   "✴  " + key + "Help3\n" + \
-                  "✴  " + key + "Promo\n" + \
-                  "✴  " + key + "Js\n" + \
+                  "✴  " + key + "Nk\n" + \
                   "✴  " + key + "Me\n" + \
                   "✴  " + key + "Apakah「Text」\n" + \
                   "✴  " + key + "Sadisbot\n" + \
                   "✴  " + key + "Clearban\n" + \
-                  "✴  " + key + "Teroris\n" + \
-                  "✴  " + key + "Sadiskibar\n" + \
-                  "✴  " + key + "Jepit\n" + \
+                  "✴  " + key + "inviteall\n" + \
                   "✴  " + key + "Status\n" + \
                   "✴  " + key + "Penyewa\n" + \
                   "✴  " + key + "Restart\n" + \
@@ -474,14 +471,11 @@ def help():
                   " ✴ " + key + "Kibar\n" + \
                   "✴  " + key + "Cek kesehatan\n" + \
                   "✴  " + key + "in/joinbot\n" + \
-                  "✴  " + key + "ut/kluarbot\n" + \
-                  "✴  " + key + "Sd.Reinvite\n" + \
+                  "✴  " + key + "out/kluarbot\n" + \
                   "✴ 「✴ command Protect✴」\n" + \
                   "✴  " + key + "Antijs stay\n" + \
                   "✴  " + key + "Ghost in\n" + \
-                  "✴  " + key + "Ghost out\n" + \
-                  "✴  " + key + "!sadis\n" + \
-                  "✴  " + key + "Sd.reinvite\n" + \
+                  "✴  " + key + "Ghost out\n" \
                   "✴  " + key + "Blc\n" + \
                   "✴  " + key + "Clearban\n" + \
                   "✴  " + key + "Adminadd @\n" + \
@@ -497,7 +491,7 @@ def help():
                   "✴  " + key + "Runtime\n" + \
                   "✴  " + key + "Creator\n" + \
                   "✴  " + key + "Speed/Sp\n" + \
-                  "✴  " + key + "!sadi/kickall\n" + \
+                  "✴  " + key + "kickall\n" + \
                   "✴  " + key + "Broadcast:「ᴛᴇxᴛ」\n" + \
                   "✴  " + key + "Setkey「New Key」 \n" + \
                   "✴  " + key + "Mykey\n" + \
@@ -511,7 +505,7 @@ def help():
 def help1():
     key = Setmain["keyCommand"]
     key = key.title()
-    helpMessage1 = "✴ " + key + " [SADIS_BOTS]\n" + \
+    helpMessage1 = "✴ " + key + " [ID BOTS]\n" + \
                   "✴ " + key + "Tagall/Nah\n" + \
                   "✴ " + key + "Ginfo\n" + \
                   "✴ " + key + "Open\n" + \
@@ -519,7 +513,7 @@ def help1():
                   "✴ " + key + "Url\n" + \
                   "✴ " + key + "Grouplist\n" + \
                   "✴ " + key + "Kibar\n" + \
-                  "✴ " + key + "Sdbot\n" + \
+                  "✴ " + key + "respon\n" + \
                   "✴ " + key + "Harga\n" + \
                   "✴ " + key + "Adminadd @\Admindell @\n" + \
                   "✴ " + key + "Staffadd @\Staffdell @「Nomor」\n" + \
@@ -4301,6 +4295,47 @@ def bot(op):
                                    cl.sendMessage(msg.to,"Chat dibersihkan...")
                                except:
                                    pass
+                        elif cmd == "backup":
+                            try:
+                                cl.findAndAddContactsByMid(Bmid)
+                                cl.findAndAddContactsByMid(Cmid)
+                                cl.findAndAddContactsByMid(Dmid)
+                                cl.findAndAddContactsByMid(Emid)
+                                cl.findAndAddContactsByMid(Zmid)
+                                cl.findAndAddContactsByMid(Amid)
+                                ki.findAndAddContactsByMid(mid)
+                                ki.findAndAddContactsByMid(Bmid)
+                                ki.findAndAddContactsByMid(Cmid)
+                                ki.findAndAddContactsByMid(Dmid)
+                                ki.findAndAddContactsByMid(Emid)
+                                ki.findAndAddContactsByMid(Zmid)
+                                kk.findAndAddContactsByMid(Amid)
+                                kk.findAndAddContactsByMid(Cmid)
+                                kk.findAndAddContactsByMid(Dmid)
+                                kk.findAndAddContactsByMid(Emid)
+                                kk.findAndAddContactsByMid(Zmid)
+                                kk.findAndAddContactsByMid(mid)
+                                kc.findAndAddContactsByMid(mid)
+                                kc.findAndAddContactsByMid(Amid)
+                                kc.findAndAddContactsByMid(Bmid)
+                                kc.findAndAddContactsByMid(Dmid)
+                                kc.findAndAddContactsByMid(Emid)
+                                kc.findAndAddContactsByMid(Zmid)
+                                kb.findAndAddContactsByMid(mid)
+                                kb.findAndAddContactsByMid(Amid)
+                                kb.findAndAddContactsByMid(Bmid)
+                                kb.findAndAddContactsByMid(Cmid)
+                                kb.findAndAddContactsByMid(Emid)
+                                kb.findAndAddContactsByMid(Zmid)
+                                kd.findAndAddContactsByMid(mid)
+                                kd.findAndAddContactsByMid(Amid)
+                                kd.findAndAddContactsByMid(Bmid)
+                                kd.findAndAddContactsByMid(Cmid)
+                                kd.findAndAddContactsByMid(Dmid)
+                                kd.findAndAddContactsByMid(Zmid)
+                                cl.sendMessage(to,"succes.!!.\nready..")
+                            except:
+                                cl.sendMessage(to,"ready..") 
 
                         elif cmd.startswith("leave "):
                           if msg._from in admin:
@@ -4499,7 +4534,7 @@ def bot(op):
                                 ke.updateProfile(profile)
                                 ke.sendMessage(msg.to,"Nama diganti jadi " + string + "") 
 
-                        elif cmd.startswith("ghostcname: "):
+                        elif cmd.startswith("ghostname: "):
                           if msg._from in admin:
                             separate = msg.text.split(" ")
                             string = msg.text.replace(separate[0] + " ","")
@@ -4535,7 +4570,7 @@ def bot(op):
                                        except:
                                            pass                              
 
-                        elif cmd == "invite":
+                        elif cmd == "invitebot":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                 try:
@@ -4550,7 +4585,7 @@ def bot(op):
                                 except:
                                     pass
                                     
-                        elif cmd == "intel": #antijs stay
+                        elif cmd == "js stay": #antijs stay
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                 try:
@@ -4847,7 +4882,7 @@ def bot(op):
                                 sw.sendMessage(to, "kesehatan\nKick : {} \nInvite : {}".format(sil1,sil))
 
                         
-                        elif ("Kick " in msg.text):
+                        elif ("Go " in msg.text):
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                key = eval(msg.contentMetadata["MENTION"])
@@ -5346,16 +5381,16 @@ def bot(op):
                                     ma += str(a) + ". " +cl.getContact(m_id).displayName + "\n"
                                 cl.sendMessage(msg.to,"SADIS BOTS Talkban User\n\n"+ma+"\nTotal「%s」Talkban User" %(str(len(wait["Talkblacklist"]))))
 
-                        elif cmd == "teroris" or text.lower() == 'blc':
+                        elif cmd == "blacklist" or text.lower() == 'blc':
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                               if wait["blacklist"] == {}:
-                                    cl.sendMessage(msg.to,"Tidak ada teroris")
-                                    ki.sendMessage(msg.to,"Tidak ada teroris")
-                                    kk.sendMessage(msg.to,"Tidak ada teroris")
-                                    kc.sendMessage(msg.to,"Tidak ada teroris")
-                                    kb.sendMessage(msg.to,"Tidak ada teroris")
-                                    kd.sendMessage(msg.to,"Tidak ada teroris")
+                                    cl.sendMessage(msg.to,"Tidak ada blacklist")
+                                    ki.sendMessage(msg.to,"Tidak ada blacklist")
+                                    kk.sendMessage(msg.to,"Tidak ada blacklist")
+                                    kc.sendMessage(msg.to,"Tidak ada blacklist")
+                                    kb.sendMessage(msg.to,"Tidak ada blacklist")
+                                    kd.sendMessage(msg.to,"Tidak ada blacklist")
                               else:
                                     ma = ""
                                     for i in wait["blacklist"]:
